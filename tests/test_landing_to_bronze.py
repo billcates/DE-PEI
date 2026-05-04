@@ -1,9 +1,6 @@
 import pytest 
 from unittest.mock import patch,MagicMock
 
-from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType
-
 from src.landing_to_bronze import *
 
 class TestLandingToBronze:

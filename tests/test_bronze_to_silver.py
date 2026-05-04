@@ -38,6 +38,8 @@ class TestBronzeToSilver:
         assert len(result_data) == 2
         assert result_data[0]["phone"] == "123456"
         assert result_data[0]["customer_name"] == "John Bill"
+        assert result_data[1]["phone"] == "123"
+        assert result_data[1]["customer_name"] == "Alice"
         assert "created_date" in result.columns
 
         mock_read.assert_called_once()
